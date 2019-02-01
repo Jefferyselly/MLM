@@ -4,50 +4,23 @@
 
 var submit_btn = document.querySelector('#create_account');
 
-submit_btn.addEventListener('click', validateSignUp);
+submit_btn.addEventListener('click',
 
 function validateSignUp(e){
+	err_count = 0;
 
-	var error_count = 0
+	//first validate all inputs with default mapping
 
-	var error_msg = [];
+	validate_input(document.querySelector('#full_name').value, document.querySelector('#display_error'),e,'Full name');
 
-	var full_name = document.querySelector('#full_name').value;
+	validate_input(document.querySelector('#user_name').value, document.querySelector('#display_error'),e, 'Username');
 
-	var username = document.querySelector('#user_name').value;
+	validate_input(document.querySelector('#password').value, document.querySelector('#display_error'),e, 'password');
 
-	var email = document.querySelector('#email').value;
+	validate_input(document.querySelector('#conf_pass').value, document.querySelector('#display_error'),e, 'Confirm Password');
 
-	var password = document.querySelector('#password').value;
+	validate_email(document.querySelector('#email').value, document.querySelector('#display_error'),e, 'Email');
 
-	var conf_pass = document.querySelector('#conf_pass').value;
+	validate_passwords(document.querySelector('#password').value,document.querySelector('#conf_pass').value,document.querySelector('#display_error'),e)
+});
 
-	var display_errors = document.querySelector('#display_error');
-
-	if(validate_input(full_name) == 1){
-		error_count++;
-		error_msg.push('Error in Full name');
-	}
-
-	if(validate_input(username) == 1){
-		error_count++;
-		error_msg.push('Error in Username');
-	}
-
-	if(validate_input(email) == 1){
-		error_count++;
-		error_msg.push('Error in Emails');
-	}
-	
-	
-
-	if(error_count > 0){
-
-		e.preventDefault();
-		for(var i = 0; i < error_msg.length; i++){
-			
-
-			$('#display_error').html(error_msg[i])
-		}
-	}
-}
