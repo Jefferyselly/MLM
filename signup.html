@@ -1,0 +1,98 @@
+ <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Myapp - signup</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- PLUGIN CSS -->
+    <link rel="stylesheet" type="text/css" media="screen" href="./static/css/styles.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="./static/css/materialize.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="./static/font-awesome/css/font-awesome.min.css"/>
+   
+   <!-- / -->
+</head>
+<body>
+<div class="signup_content">
+    <div class="container">
+    <div class="right-align">Already have an Account ? <a class="waves-effect waves-light btn">Login</a></div>
+    <div class='center-align'><h4>Sign Up Now and <br> Experience Internet money</h4></div>
+    <div id="signup_container">
+        
+    <div class="row">
+            <div class="col m6">
+                <!-- Some cool content about app -->
+                <div id='signup_content'>
+                <h5>  Pay Once, Earn More</h5>
+                <p> Pay a one-time fee of N1,500 and earn for as long as you want. </p>
+                <hr>
+
+                <h5>On-Time Payment</h5>
+                <p> Without Delays, we make payment direct to your Nigerian Bank Account.</p>
+                <hr>
+
+                <h5>Earn with Ease</h5>
+                <p> Get paid to share contents on facebook , twitter and other social networks.</p>
+                </div>
+            </div>
+
+
+            <div class="col m6">
+                    <!-- Signup form-->
+                    <div id="form">
+                    <form>
+
+                    <div id="display_error">
+                        
+                    </div>
+                    
+                    <label for="full_name">
+                    Full name *</label>
+                        <input type="text" name="full_name" placeholder="Full Name" class="browser-default" id="full_name">
+                        
+                        <label for="username">
+                        Username *</label>
+                        <input type="text" name="username" placeholder="Username" class="browser-default" id="user_name">
+                        
+
+                        <label for="email">
+                        Email *</label>
+                        <input type="email" name="email" placeholder="Email" class="browser-default" id="email">
+
+                        <label for="password">
+                        Password *
+                        </label>
+                        <input type="password" name="password" placeholder="Password" class="browser-default" id="password">
+
+                         <label for="password">
+                        Confirm Password *
+                        </label>
+                        <input type="password" name="conf_password" placeholder="Confirm Password" class="browser-default" id="conf_pass">
+
+                        <label for="payment_method">Payment Method *</label>
+                        <select name="payment_method" class="browser-default">
+                            <option> Bank Transfer</option>
+                            <option> Paystack (Online Payment)</option>
+                        </select>
+
+                        <br>
+
+                        <button class='btn blue' id="create_account"><b>CREATE ACCOUNT</b></button>
+                        
+                    </form>
+                    </div>
+                </div>
+        </div>
+    </div>
+    </div>
+    
+    </div>
+
+
+<script src="static/js/jquery.js"></script>
+<script src="static/js/materialize.js"></script>
+<script type="text/javascript" src='static/js/form_validation.js'></script>
+<script type="text/javascript" src='static/js/script.js'></script>
+</body>
+</html>
