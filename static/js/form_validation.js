@@ -7,11 +7,15 @@ function validate_input(arg,errDisplay,e,fieldName){
 		
 		//Display the error
 		e.preventDefault();
+
+		//add the styles
+		errDisplay.setAttribute('class','display_error')
+
 		errDisplay.innerHTML = 'Empty fields present'
 
 	}
 
-	//validate length, should not be less than 4
+	
 
 	
 	
@@ -25,7 +29,10 @@ function validate_email(email,errDisplay,e,fieldName){
 		//Display Error
 		e.preventDefault();
 
+
 		p.appendChild(document.createTextNode('Invalid mail'));
+		//add the styles
+		errDisplay.setAttribute('class','display_error')
 		errDisplay.appendChild(p);
 	}
 
@@ -38,6 +45,8 @@ function validate_passwords(password,conf_pass,errDisplay,e){
 		e.preventDefault();
 
 		p.appendChild(document.createTextNode('Passwords do not match'));
+		//add the styles
+		errDisplay.setAttribute('class','display_error')
 
 		errDisplay.appendChild(p);
 	}

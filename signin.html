@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Myapp - Signin</title>
+
+	 <!-- PLUGIN CSS -->
+    <link rel="stylesheet" type="text/css" media="screen" href="./static/css/materialize.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="./static/font-awesome/css/font-awesome.min.css"/>
+    <link rel="stylesheet" type="text/css" media="screen" href="./static/css/signin_component.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="./static/css/styles.css" />
+   
+   <!-- / -->
+</head>
+<body>
+
+<div id="signin_content">
+
+<div class="center-align">
+<img src="static/img/logo.png" id="logo">
+</div>
+
+<div id="login_area">
+	<form>
+	<h5>Login Your Account </h5>
+	<div id="display_error"></div>
+	<div class="input_container">
+	<i class="fa fa-user icon"></i>
+		<input type="email" name="email" placeholder="Email" class="browser-default" id="email">
+		</div>
+		<div class="input_container">
+		<i class="fa fa-key icon"></i>
+		<input type="password" name="password" placeholder="Password" class="browser-default" id="password">
+		</div>
+		<p><button type="submit" class="btn" id="login"> Log In </button></p>
+
+		<div id="signin_form_footer"> New To Myapp ? <a href='signup.html'> Sign Up </a></div>
+	</form>
+</div>
+<br>
+<div id="forgotpass" class="center-align"><a href="#">Forgot Your Password ? </a></div>
+
+<hr>
+
+<div class="valign-wrapper center-align">
+<center>
+	<a href="#">Terms of Service</a>
+	<a href="#">Privacy Policy</a>
+	<a href="#">&copy; 2019 Myapp.com</a>
+	</center>
+</div>
+	
+</div>
+
+
+<script src="static/js/jquery.js"></script>
+<script src="static/js/materialize.js"></script>
+<script type="text/javascript" src='static/js/form_validation.js'></script>
+<script type="text/javascript" src='static/js/script.js'></script>
+</body>
+</html>

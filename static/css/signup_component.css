@@ -1,15 +1,4 @@
 
-body{
-	font-family: "BentonSans","Helvetica Neue",sans-serif;
-    background-color:#58488a;
-	background-image:-webkit-linear-gradient(bottom, #58488a, #5d64d0);
-	background-image:linear-gradient(to top, #58488a, #5d64d0);
-	background-attachment:fixed;
-    color : #fff;
-    
-
-}
-
 /* SIGNUP COMPONENT FOR PC*/
 @media screen and (min-width: 768px){
 #signup_content{
@@ -90,14 +79,7 @@ label{
 	width : 100%;
 }
 
-#display_error{
-	background: pink;
-	padding : 10px;
-	border-radius : 5px;
-}
-#display_error p{
-	display : block;
-}
+
 }
 
 
@@ -175,13 +157,4 @@ label{
 #signup_container .btn{
 	display: block;
 	width : 100%;
-}
-
-#display_error{
-	background: pink;
-	padding : 10px;
-	border-radius : 5px;
-}
-#display_error p{
-	display : block;
 }
