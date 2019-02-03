@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Myapp - Signin</title>
+
+	 <!-- PLUGIN CSS -->
+    <link rel="stylesheet" type="text/css" media="screen" href="./static/css/materialize.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="./static/font-awesome/css/font-awesome.min.css"/>
+    <link rel="stylesheet" type="text/css" media="screen" href="./static/css/dashboard_component.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="./static/css/styles.css" />
+   
+   <!-- / -->
+</head>
+<body>
+<div class="row">
+
+<div class="col m3">
+   <ul id="slide-out" class="sidenav sidenav-fixed">
+    <li><div class="user-view">
+      <div class="background">
+        <img src="static/img/user_bg.jpg">
+      </div>
+      <a href="#user"><img class="circle" src="static/img/naomi.jpg"></a>
+      <a href="#name"><span class="white-text name">Jeffey selly</span></a>
+      <a href="#email"><span class="white-text email">jdandturk@gmail.com</span></a>
+    </div></li>
+    <li><a href="#!"><i class="fa fa-user"></i>My Account</a></li>
+    <li><a href="#!"><i class="fa fa-shopping-cart"></i>Purchase Coupon code</a></li>
+    <li><div class="divider"></div></li>
+    <li><a href="#!"><i class="fa fa-google-wallet"></i>Withdrawal</a></li>
+    <li><a href="#!"><i class="fa fa-share"></i>Sponsored Post</a></li>
+    <li><a href="#!"><i class="fa fa-file"></i>Payout Records</a></li>
+    <li><a href="#!"><i class="fa fa-sign-out"></i>Logout</a></li>
+    
+  </ul>
+  
+  </div>
+  <div class="col m9" id="dashboard_cards">
+  <div id="page_header">
+  <div class="valign-wrapper">
+  	<a href="#" data-target="slide-out" class="sidenav-trigger hide-on-large-only"><i class="fa fa-bars fa-5x" id="bars"></i> </a><h5>Dashboard</h5>
+  	</div>
+  	<div class="divider"></div>
+  	<div class="row">
+  	<div class="col m12">
+  		<!-- Container for started tabs-->
+  		<div class="valign-wrapper" id="stats">
+  			<p>
+  				<div class="row"><span><i class="fa fa-bar-chart"></i>Total Refered : 10</span>  <span><i class="fa fa-money"></i>        Current Amount : &#8358;54000 </span><span><i class="fa fa-check"></i>All Time Amount Earned : &#8358;130000</span></div>
+  			</p>
+  		</div>
+  		
+  <div class="row">
+    <div class="col m6">
+      <div class="card grey darken-1">
+        <div class="card-content white-text">
+          <span class="card-title">Purchase Coupon</span>
+          <p>Browse through list of verified sellers and purchase coupon code to activate your pending account.</p>
+        </div>
+        <div class="card-action">
+          <button class="btn blue">Purchase Coupon Code</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- !-->
+
+
+    <div class="col m6">
+      <div class="card grey darken-1">
+        <div class="card-content white-text">
+          <span class="card-title">Account Details</span>
+          <p>Configure your Account settings, Bank Details, Social Media Details to work with this website</p>
+        </div>
+        <div class="card-action">
+          <button class="btn blue">Update My Account</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- !-->
+
+    <br>
+
+<!-- !-->
+
+
+    <div class="col m6">
+      <div class="card grey darken-1">
+        <div class="card-content white-text">
+          <span class="card-title">Sponsored Post</span>
+          <p>Check for Today's sponsored post to earn 150NGN immediately.</p>
+        </div>
+        <div class="card-action">
+          <button class="btn blue">Chek for Sponsored post</button>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- !-->
+
+    <!-- !-->
+
+
+    <div class="col m6">
+      <div class="card grey darken-1">
+        <div class="card-content white-text">
+          <span class="card-title">Withdrawal</span>
+          <p>Have you reached , a minimum payout balance of N2,000 ? . you can withdraw now before it closes.</p>
+        </div>
+        <div class="card-action">
+          <button class="btn blue">Submit Wthdrawal form</button>
+        </div>
+      </div>
+    </div>
+    
+
+    <!-- !-->
+
+  </div>
+  </div>
+            
+  	</div>
+  </div>
+
+  	
+  </div>
+
+  </div>
+
+  
+
+
+
+  
+  
+
+
+  <script src="static/js/jquery.js"></script>
+<script src="static/js/materialize.js"></script>
+<script type="text/javascript" src='static/js/form_validation.js'></script>
+<script type="text/javascript" src='static/js/script.js'></script>
+<script>
+
+  // Initialize collapsible (uncomment the lines below if you use the dropdown variation)
+  // var collapsibleElem = document.querySelector('.collapsible');
+  // var collapsibleInstance = M.Collapsible.init(collapsibleElem, options);
+
+  // Or with jQuery
+
+  $(document).ready(function(){
+    $('.sidenav').sidenav();
+  });
+</script>
+</body>
+</html

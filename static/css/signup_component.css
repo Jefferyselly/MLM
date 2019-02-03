@@ -1,4 +1,9 @@
-
+body{
+	background-color: background-color:#58488a;
+	background-image:-webkit-linear-gradient(bottom, #58488a, #5d64d0);
+	background-image:linear-gradient(to top, #58488a, #5d64d0);
+	background-attachment:fixed;
+}
 /* SIGNUP COMPONENT FOR PC*/
 @media screen and (min-width: 768px){
 #signup_content{
